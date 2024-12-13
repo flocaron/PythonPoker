@@ -9,10 +9,10 @@ if __name__ == "__main__":
     partie = Partie(noms_joueurs)
 
 
-    partie.demarrer()
+    partie.jouer()
 
-    # Afficher l'état des joueurs et de la table
-    for joueur in partie.joueurs:
-        print(joueur)
-    print(partie.table)
+    # # Afficher l'état des joueurs et de la table
+    # for joueur in partie.joueurs:
+    #     print(joueur)
+    # print(partie.table)
 

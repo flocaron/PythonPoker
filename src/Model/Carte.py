@@ -4,4 +4,7 @@ class Carte:
         self.couleur = couleur
 
     def __str__(self):
-        return f"{self.valeur} de {self.couleur}"
+        return f"{self.valeur}{self.couleur}"
+    
+        
+
