@@ -5,6 +5,8 @@ class Joueur:
         self.jetons = jetons
         self.main = []
         self.actif = True
+        self.mise_actuelle = 0
+        
 
     def recevoir_carte(self, carte):
         self.main.append(carte)
@@ -35,12 +37,13 @@ class Joueur:
     # function tour d'un joueur
 
     def se_coucher(self):
-        self.actif = False
+        self.actif = True
 
     def miser(self, montant):
         if montant > self.jetons:
             return False
         self.jetons -= montant
+        self.mise_actuelle += montant
         return montant
     
     def parole(self):

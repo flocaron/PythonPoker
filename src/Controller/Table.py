@@ -17,6 +17,7 @@ class Table:
         if montant < self.derniere_mise:
             return False
         self.pot += montant
+        self.derniere_mise = montant
         return True
 
 
